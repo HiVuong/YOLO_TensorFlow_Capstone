@@ -1,0 +1,41 @@
+* Bài học lý thuyết học máy và CNN trên pyLesson:
+https://pylessons.com/YOLOv3-TF2-introduction
+
+* Bài học yolov3 tensorflowv2 trên machinelearningspace:
+https://machinelearningspace.com/yolov3-tensorflow-2-part-1/
+
+* Folder bài học về CNN trên kênh youtube freeCodeCamp.org
+- Link video gốc:
+    https://www.youtube.com/watch?v=tPYj3fFJGjk&ab_channel=freeCodeCamp.org
+- Core learning algorithms:
+    https://colab.research.google.com/drive/15Cyy2H7nT40sGR7TBN5wBvgTd57mVKay#forceEdit=true&sandboxMode=true
+
+* Lý thuyết thuật toán YOLO là gì:
+https://www.youtube.com/watch?v=ag3DLKsl2vk&list=PLeo1K3hjS3us_ELKYSj_Fth2tIEkdKXvV&index=103&ab_channel=codebasics
+
+* Kết nối vscode với github
+https://www.youtube.com/playlist?list=PLpPVLI0A0OkLBWbcctmGxxF6VHWSQw1hi
+
+* Cài đặt git
+https://phoenixnap.com/kb/how-to-install-git-windows
+
+----------------------------------------------------------------
+*Tạo môi trường ảo:
+python -m venv venv
+
+* Kịch hoạt môi trường ảo:
+venv\Scripts\activate
+
+*vị trí lưu folder kernel:
+C:\Users\PC\AppData\Roaming\jupyter\kernels\venv
+
+*Cài đặt ipykernel library:
+pip install ipykernel
+
+*Cài đặt ipython kernel:
+ipython kernel install --user --name=venv221025
+
+*Khi đọc dataset bị lỗi thì vào User/PC để xóa file rồi tải lại
+
+----------------------------------------------------------------
+* Các bước xây dựng mạng CNN để phân loại hình:
