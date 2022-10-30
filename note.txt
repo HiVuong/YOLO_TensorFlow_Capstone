@@ -19,6 +19,9 @@ https://www.youtube.com/playlist?list=PLpPVLI0A0OkLBWbcctmGxxF6VHWSQw1hi
 * Cài đặt git
 https://phoenixnap.com/kb/how-to-install-git-windows
 
+* COCO format
+https://www.youtube.com/watch?v=h6s61a_pqfM&ab_channel=ImmersiveLimit
+
 ----------------------------------------------------------------
 *Tạo môi trường ảo:
 python -m venv venv
