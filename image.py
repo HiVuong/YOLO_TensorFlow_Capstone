@@ -3,7 +3,10 @@ import tensorflow as tf
 from utils import load_class_names, output_boxes, draw_outputs, resize_image
 import cv2
 import numpy as np
-from yolov3 import YOLOv3NET
+from yolov3 import YOLOv3Net
+
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 # physical_devices = tf.config.experimental.list_physical_devices('GPU')
 # assert len(physical_devices) > 0, "Not enough GPU hardware devices available"
@@ -19,11 +22,11 @@ confidence_threshold = 0.5
 
 cfgfile = 'cfg/yolov3.cfg'
 weightfile = 'weights/yolov3_weights.tf'
-img_path = "data/images/test.jpg"
+img_path = 'images/test.jpg'
 
 def main():
 
-    model = YOLOv3NET(cfgfile, model_size, num_classes)
+    model = YOLOv3Net(cfgfile, model_size, num_classes)
     model.load_weights(weightfile)
 
     class_names = load_class_names(class_name)
@@ -35,7 +38,7 @@ def main():
     resized_frame = resize_image(image, (model_size[0], model_size[1]))
     pred = model.predict(resized_frame)
 
-    boxes, scores, classes, nums = output_boxes( \
+    boxes, scores, classes, nums = output_boxes(
         pred, model_size,
         max_output_size = max_output_size,
         max_output_size_per_class = max_output_size_per_class,

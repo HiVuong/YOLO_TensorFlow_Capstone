@@ -25,7 +25,7 @@ def parse_cfg(cfgfile):
     return blocks
 
 
-def YOLOv3NET(cfgfile, model_size, num_classes):
+def YOLOv3Net(cfgfile, model_size, num_classes):
 
     blocks = parse_cfg(cfgfile)
 

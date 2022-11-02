@@ -1,6 +1,6 @@
 #convert_weights.py
 import numpy as np
-from yolov3 import YOLOv3NET
+from yolov3 import YOLOv3Net
 from yolov3 import parse_cfg
 
 def load_weights(model, cfgfile, weightfile):
@@ -62,7 +62,7 @@ def main():
     model_size = (416, 416, 3)
     num_classes = 80
 
-    model = YOLOv3NET(cfgfile, model_size, num_classes)
+    model = YOLOv3Net(cfgfile, model_size, num_classes)
     load_weights(model, cfgfile, weightfile)
 
     try:
