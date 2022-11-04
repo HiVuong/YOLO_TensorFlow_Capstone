@@ -2,8 +2,7 @@
 import tensorflow as tf
 from tensorflow import keras
 from keras import Model
-from keras.layers import BatchNormalization, Conv2D, \
-    Input, ZeroPadding2D, LeakyReLU, UpSampling2D
+from keras.layers import BatchNormalization, Conv2D, Input, ZeroPadding2D, LeakyReLU, UpSampling2D
 
 
 
